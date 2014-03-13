@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<!-- HEAD FRONT MATTER -->
+
+<head>
+    <meta charset="utf-8">
+    <title>This is a title</title>
+
+    <meta name="description" content="some description">
+    <meta name="author" content="Some Person">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.min.css">
+    <link rel="stylesheet" href="revealjs/css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="revealjs/css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
+
+</head>
+
+
+<!-- BODY with div reveal as container for div slides and scritp sections -->
+<body>
+
+<!-- inside reveal container a slides container  -->
+<div class="reveal">
+
+    <!-- Any section element inside of this slides container is displayed as a slide -->
+    <div class="slides">
+
+
+        <!-- individual slids is a section -->
+
+        <section>
+            <h1>Slide</h1>
+
+            <h2>heading2</h2>
+
+            <h3>heading3</h3>
+
+            <p>paragraph text bla bla bla</p>
+        </section>
+
+        <section>
+            <h2>Another slide</h2>
+
+            <p>
+                <a href="https://github.com/hakimel/reveal.js">link to wonderful reveal.js source on github</a>
+
+            <p>
+
+            <p>
+                <a href="http://lab.hakim.se/reveal-js/#/">Introduction to Reveal.js</a>
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Slide with code</h2>
+<!-- WARNING. code content if a block has to be left aligned, no left padding for the block-->
+          <pre><code data-trim contenteditable>
+# add reveal.js as submodule
+git submodule add https://github.com/hakimel/reveal.js revealjs
+          </code></pre>
+        </section>
+
+        <section>
+            <h2>slide with list</h2>
+            <ul>
+                <li>item list
+                <li>another item list
+                <li>another item list
+            </ul>
+        </section>
+
+        <section>
+            <h2>Slide with image from url</h2>
+            <a href="#" class="image">
+                <img src="http://octodex.github.com/images/daftpunktocat-thomas.gif" alt="daftpunktocat-thomas">
+            </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Slide with local image</h2>
+            <a href="#" class="image">
+                <img src="images/drwhoavatar.jpeg" alt="local image">
+            </a>
+            </p>
+        </section>
+
+
+        <section>
+            <h1>LAST SLIDE</h1>
+
+            <h3>OK</h3>
+        </section>
+
+    </div>
+
+</div>
+
+<!-- reveal javascript  -->
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'revealjs/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            } },
+            { src: 'revealjs/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'revealjs/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            } },
+            { src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } },
+            { src: 'revealjs/plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
