@@ -38,6 +38,22 @@ Your html has to have this structure:
         - script
         - script
 
+## Authoring with markdown
+
+Given I use Rubymine I need to fix the automatic reformatter so it does not mess up my `pre.code` sections and my `<section data-markdown>`
+
+Rubymine Settings > Code Style > HTML section
+
+- tab: Tabs and Indents
+    - numbers 2, 4, 8
+- tab: Other
+    - Insert new line before:
+        -  add `section` entrey
+    - Do not indent children of:
+        - add `code` and `section data-markdown`
+    - Keep whitespaces inside:
+        - add `code`, `section`, `section data-markdown`
+
 
 ## Running
 
