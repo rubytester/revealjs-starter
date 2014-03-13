@@ -138,7 +138,14 @@ git submodule add https://github.com/hakimel/reveal.js revealjs
     <section>
       <h1>LAST SLIDE</h1>
 
-      <h3>OK</h3>
+<!-- div class=fragment can be revealed as inner slide -->
+        <div class="fragment">
+            <h3>OK</h3>
+            <p>Fragmented here</p>
+        </div>
+
+        <h3 class="fragment">I am a fragment too</h3>
+
     </section>
 
     </div>
